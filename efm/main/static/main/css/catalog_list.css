@@ -1,0 +1,53 @@
+body {
+    font-family: Helvetica;
+    font-size: 20px;
+
+    margin-left: 40px;
+}
+
+#main-text {
+    width: 100%;
+    text-align: center;
+    color: var(--2, #212353);
+    font-size: 46px;
+    font-family: Helvetica;
+    font-weight: 700;
+    line-height: 59.80px;
+    word-wrap: break-word;
+
+    margin-top: 50px;
+}
+
+
+.purple-button{
+    color: white;
+    border-radius: 50px;
+    background: rgb(156, 105, 226, 1);
+
+    font-family: 'Avenir middle';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 160%;
+    font-style: normal;
+    text-align: center;
+
+    border: none;
+    border-radius: 50;
+    cursor: pointer;
+
+    margin-top: 30px;
+    padding: 16px 37px 15px;
+
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+
+}
+
+a:hover{
+    color: rgb(156, 105, 226, 1);
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

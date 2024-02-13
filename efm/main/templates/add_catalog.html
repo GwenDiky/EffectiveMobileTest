@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление записи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/catalog_list.css' %}">
+</head>
+<body>
+    <div id="main-text">Добавление новой записи</div>
+    <div class="container">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col">
+                 <form method="POST" class="pt-3" enctype="multipart/form-data">
+                     {% csrf_token %}
+                     {{ form.as_p }}
+                     <button class="purple-button" style="margin-top: 20px;" type="submit">
+                              <span class="purple-button">Добавить запись</span>
+                     </button>
+                 </form>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+    </div>
+</body>
+</html>
